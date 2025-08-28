@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Goals</string>
+    <string name="widget_description">Shows how many days you\'ve been together</string>
+</resources>

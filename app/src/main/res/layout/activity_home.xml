@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background_gradient"
+    tools:context=".HomeActivity">
+
+    <!-- Hamburger Icon (Top Left) -->
+    <ImageView
+        android:id="@+id/hamburger_icon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:src="@drawable/ic_hamburger_menu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@android:color/white"
+        android:contentDescription="Menu Icon"/>
+
+    <!-- Profile Icon (Top Right) -->
+    <ImageView
+        android:id="@+id/profile_icon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_profile_placeholder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="Profile Icon"/>
+
+    <!--
+        Welcome Message Header.
+        This TextView is constrained to the top of the screen and takes up 40% of the height.
+        It will remain fixed while the content below scrolls.
+    -->
+    <TextView
+        android:id="@+id/welcome_message"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="@font/product_sans_bold"
+        android:gravity="center"
+        android:padding="32dp"
+        android:text="Hello,\n"
+        android:textColor="@android:color/white"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
